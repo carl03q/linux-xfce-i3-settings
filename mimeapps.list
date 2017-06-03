@@ -25,3 +25,4 @@ application/x-shellscript=mousepad.desktop;
 text/plain=mousepad.desktop;
 text/markdown=mousepad.desktop;
 image/png=gimp.desktop;viewnior.desktop;
+application/x-trash=mousepad.desktop;

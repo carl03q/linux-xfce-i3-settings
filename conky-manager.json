@@ -6,7 +6,7 @@
   "pane_position" : "300",
   "window_width" : "629",
   "window_height" : "500",
-  "startup_delay" : "20",
+  "startup_delay" : "10",
   "search-locations" : [
   ]
 }
