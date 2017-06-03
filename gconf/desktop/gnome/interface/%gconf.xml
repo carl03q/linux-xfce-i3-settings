@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="menus_have_icons" mtime="1496529603" type="bool" value="false"/>
 	<entry name="gtk_theme" mtime="1367400973" type="string">
 		<stringvalue>Vertex-Maia</stringvalue>
 	</entry>

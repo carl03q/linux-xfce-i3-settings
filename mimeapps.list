@@ -23,3 +23,5 @@ image/gif=viewnior.desktop;gimp.desktop;
 application/x-compressed-tar=engrampa.desktop;
 application/x-shellscript=mousepad.desktop;
 text/plain=mousepad.desktop;
+text/markdown=mousepad.desktop;
+image/png=gimp.desktop;viewnior.desktop;
