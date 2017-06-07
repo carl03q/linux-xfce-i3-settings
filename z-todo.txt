@@ -1,0 +1,3 @@
+add System san francisco font to .fonts
+add fontawesome
+add i3locks-fancy-multimonitor
