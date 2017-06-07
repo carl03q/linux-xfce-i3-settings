@@ -1,0 +1,21 @@
+{
+   "api_console_project_id": "749020396903",
+   "app": {
+      "launch": {
+         "web_url": "https://realtimeboard.com/from-chrome-store/"
+      },
+      "urls": [ "https://realtimeboard.com/" ]
+   },
+   "container": "GOOGLE_DRIVE",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDZIwRzOrxbiwBT2jrUht+MfD5yDrWKbNEOV2099yWThFHlkBAaOmq/WVu4fiewlDJ2BhNGJch68XLdqhkrrTju4WJQxTlszwjUi1mfI7Khp+qcIifMs9dQNYfyBMRDhhoHJBwUOoqQ901W/OHbA9ZokhfecUZkohBi+cbypyJowIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "clipboardRead", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.38.1.6"
+}

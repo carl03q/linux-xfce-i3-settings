@@ -1,0 +1,25 @@
+2017/06/06-06:44:47.166 26898 Reusing MANIFEST /home/carlos/.config/google-chrome/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2017/06/06-06:44:47.167 26898 Recovering log #65
+2017/06/06-06:44:48.253 26898 Level-0 table #70: started
+2017/06/06-06:44:48.590 26898 Level-0 table #70: 2528212 bytes OK
+2017/06/06-06:44:48.855 26898 Delete type=0 #65
+2017/06/06-06:45:49.158 27869 Level-0 table #73: started
+2017/06/06-06:45:49.271 27869 Level-0 table #73: 2528516 bytes OK
+2017/06/06-06:45:49.304 27869 Delete type=0 #71
+2017/06/06-06:45:50.602 27869 Level-0 table #75: started
+2017/06/06-06:45:50.716 27869 Level-0 table #75: 2528218 bytes OK
+2017/06/06-06:45:50.757 27869 Delete type=0 #72
+2017/06/06-06:45:51.418 27869 Level-0 table #77: started
+2017/06/06-06:45:51.536 27869 Level-0 table #77: 2528257 bytes OK
+2017/06/06-06:45:51.587 27869 Delete type=0 #74
+2017/06/06-06:45:51.588 27869 Compacting 4@0 + 2@1 files
+2017/06/06-06:45:51.744 27869 Generated table #78@0: 1 keys, 2528257 bytes
+2017/06/06-06:45:51.785 27869 Generated table #79@0: 4 keys, 391 bytes
+2017/06/06-06:45:51.785 27869 Compacted 4@0 + 2@1 files => 2528648 bytes
+2017/06/06-06:45:51.827 27869 compacted to: files[ 0 2 1 0 0 0 0 ]
+2017/06/06-06:45:51.827 27869 Delete type=2 #75
+2017/06/06-06:45:51.828 27869 Delete type=2 #67
+2017/06/06-06:45:51.828 27869 Delete type=2 #68
+2017/06/06-06:45:51.828 27869 Delete type=2 #73
+2017/06/06-06:45:51.828 27869 Delete type=2 #77
+2017/06/06-06:45:51.829 27869 Delete type=2 #70

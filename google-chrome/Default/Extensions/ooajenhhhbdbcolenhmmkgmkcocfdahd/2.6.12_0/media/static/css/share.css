@@ -1,0 +1,29 @@
+#share-footer {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#link-container, .description-container {
+  margin-top: 10px;
+}
+
+.description-container {
+	margin-bottom: 10px;
+}
+
+#description-input {
+  width: 384px;
+  height: 70px;
+}
+
+.email {
+  margin-bottom: 5px;
+}
+
+#edit-link {
+  margin-left: 5px;
+}
+
+.tt-dataset-email {
+  margin-bottom: 10px;
+}

@@ -1,19 +1,17 @@
 VirtualBox GUI VM Selector Window 5.1.22 r115126 linux.amd64 (May  9 2017 19:27:33) release log
-00:00:00.302894 Log opened 2017-06-03T22:39:35.456828000Z
-00:00:00.302896 Build Type: release
-00:00:00.302898 OS Product: Linux
-00:00:00.302898 OS Release: 4.9.30-1-MANJARO
-00:00:00.302899 OS Version: #1 SMP PREEMPT Thu May 25 20:31:43 UTC 2017
-00:00:00.302916 DMI Product Name: Inspiron 5559
-00:00:00.302921 DMI Product Version: 
-00:00:00.302953 Host RAM: 7692MB (7.5GB) total, 5295MB (5.1GB) available
-00:00:00.302956 Executable: /usr/lib/virtualbox/VirtualBox
-00:00:00.302956 Process ID: 12683
-00:00:00.302957 Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.302986 Qt version: 5.8.0
-00:00:00.318228 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:00:00.448371 Failed to open "/dev/vboxdrv", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:00.448558 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:00:00.452796 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 33x0 x 1333x768
-00:00:00.496258 refreshCertificates/#1: InMem.Cert.TbsCertificate.T3.Extensions.papItems[#].ExtnValue.NameConstraints.T0.PermittedSubtrees.papItems[#]: Unexpected sequence type/flags: 0x2/0x80 (expected 0x10/0x20)
-00:00:00.498999 refreshCertificates/#3: Found 1/171 SSL certs we/you trust (previously 0/0).
+00:00:00.293685 Log opened 2017-06-06T12:00:29.628362000Z
+00:00:00.293687 Build Type: release
+00:00:00.293688 OS Product: Linux
+00:00:00.293689 OS Release: 4.9.30-1-MANJARO
+00:00:00.293690 OS Version: #1 SMP PREEMPT Thu May 25 20:31:43 UTC 2017
+00:00:00.293707 DMI Product Name: Inspiron 5559
+00:00:00.293712 DMI Product Version: 
+00:00:00.293745 Host RAM: 7692MB (7.5GB) total, 6155MB (6.0GB) available
+00:00:00.293748 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.293749 Process ID: 30506
+00:00:00.293750 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.293768 Qt version: 5.8.0
+00:00:00.299701 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.368126 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:04.811285 GUI: UIInvisibleWindow::sltFallback: Move event haven't came. Screen: 0, work area: 682x383 x 75x50
+00:00:04.811355 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 682x383 x 75x50

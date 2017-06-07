@@ -1,0 +1,35 @@
+{
+   "background": {
+      "scripts": [ "media/static/js/lib/third_party/mousetrap.min.js", "media/static/js/lib/third_party/mousetrap-global-bind.min.js", "media/static/js/lib/third_party/jquery-1.8.3.min.js", "media/static/js/lib/third_party/jquery-ui-1.11.4.custom/jquery-ui.min.js", "media/static/js/shared/utils/string.min.js", "media/static/js/shared/utils/general.min.js", "media/static/js/shared/utils/status.min.js", "media/static/js/shared/utils/http.min.js", "media/static/js/shared/utils/jquery.min.js", "media/static/js/shared/utils/db.min.js", "media/static/js/utils/badge.min.js", "media/static/js/utils/browser.min.js", "media/static/js/utils/autosave.min.js", "media/static/js/shared/mixins/utils/server.min.js", "media/static/js/shared/mixins/utils/options.min.js", "media/static/js/shared/mixins/utils/accessor.min.js", "media/static/js/shared/mixins/utils/order.min.js", "media/static/js/shared/mixins/account/abstract/server_communication.min.js", "media/static/js/shared/mixins/account/abstract/bundle_accessor.min.js", "media/static/js/shared/mixins/account/account.min.js", "media/static/js/shared/mixins/account/subscription.min.js", "media/static/js/shared/mixins/account/synchronizer.min.js", "media/static/js/shared/mixins/bundles/bundle-base.min.js", "media/static/js/shared/mixins/bundles/tab-base.min.js", "media/static/js/widgets/wheel.min.js", "media/static/js/pages/page.min.js", "media/static/js/pages/bundles/bundle_container/bundle_container.min.js", "media/static/js/pages/bundles/bundle_container/archived.min.js", "media/static/js/pages/bundles/bundle_container/own.min.js", "media/static/js/pages/bundles/bundle_container/shared.min.js", "media/static/js/pages/bundles/tab.min.js", "media/static/js/pages/bundles/bundle.min.js", "media/static/js/pages/bundles/tb.min.js", "media/static/js/background/main.js" ]
+   },
+   "browser_action": {
+      "default_icon": "media/images/tbIconOrange.png",
+      "default_popup": "tb_popup.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Ctrl+Shift+A",
+            "linux": "Ctrl+Shift+A",
+            "mac": "Ctrl+Shift+A",
+            "windows": "Ctrl+Shift+A"
+         }
+      }
+   },
+   "description": "Share and Organize Like Never Before",
+   "externally_connectable": {
+      "matches": [ "*://*.tabbundler.com/*" ]
+   },
+   "icons": {
+      "128": "media/images/tbIconOrange.png",
+      "16": "media/images/tbIconOrange.png",
+      "48": "media/images/tbIconOrange.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDmVYaFkcczod6rLEx0yrrEnWYRoqPoU0sUZesJlZpsBGwhYdkmwMa33fwqx7MYnD9kLHy/SVq4kRdVNl0ALcfSYhAsB8p0godRa66sJNf3cfL6iJ2g5NfMpMly35Byqk+WA7B2bUKvz+3k0jBusCkSelAKvZ5Ar41dq2isS2jR+wIDAQAB",
+   "manifest_version": 2,
+   "name": "Tab Bundler",
+   "permissions": [ "tabs", "contextMenus", "https://www.tabbundler.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.6.12",
+   "web_accessible_resources": [ "media/images/tbIconOrange.png" ]
+}

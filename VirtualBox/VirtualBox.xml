@@ -11,8 +11,8 @@
       <ExtraDataItem name="GUI/DetailsPageBoxes" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
       <ExtraDataItem name="GUI/LastWindowPosition" value="298,109,770,550"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="255,509"/>
-      <ExtraDataItem name="GUI/UpdateCheckCount" value="2"/>
-      <ExtraDataItem name="GUI/UpdateDate" value="1 d, 2017-06-04, stable, 5.1.22"/>
+      <ExtraDataItem name="GUI/UpdateCheckCount" value="3"/>
+      <ExtraDataItem name="GUI/UpdateDate" value="1 d, 2017-06-07, stable, 5.1.22"/>
     </ExtraData>
     <MachineRegistry/>
     <NetserviceRegistry>

@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html> 
+<head>
+<link rel="stylesheet" type="text/css" href="/media/static/css/images.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/tb_popup.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/share.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/bundles.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/instructions.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/email.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/upgrade.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/options.css" />
+<link rel="stylesheet" type="text/css" href="/media/static/css/font-awesome.min.css" />
+<script src="/media/static/js/lib/third_party/jquery-1.8.3.min.js"></script>
+<script src="/media/static/js/lib/third_party/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="/media/static/js/lib/third_party/mousetrap.min.js"></script>
+<script src="/media/static/js/lib/third_party/mousetrap-global-bind.min.js"></script>
+<script src="/media/static/js/lib/third_party/mousetrap-pause.min.js"></script>
+<script src="/media/static/js/lib/third_party/twitter-typeahead.js"></script>
+<script src="/media/static/js/shared/utils/jquery.min.js"></script>
+<script src="/media/static/js/lib/listJs/list.min.js"></script>
+<script src="/media/static/js/lib/third_party/analytics.min.js"> </script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <div id="header"> 
+    <div class="image header right" id="home" title="Home Page"> </div>
+    <div class="image header right options-page-toggler" id="settings" title="Settings"> </div>
+    <div class="image header right email-page-toggler" id="feedback" title="Emails"> </div>
+    <div class="image header right instructions-page-toggler" id="instructions" title="Instructions"> </div>
+    <div class="image header right tb-button upgrade-page-toggler" id="upgrade" title="Upgrade"> </div>
+    <div class="image header right tb-button sign-in-button login-page-toggler" id="sign-in" title="Sign In."> </div>
+    <div class="image header right tb-button sign-in-button login-page-toggler" id="sign-out" title="Sign Out." hidden> </div>
+    <br/>
+  </div>
+
+  <div id="tb-popup" hidden>
+    <div id="close-popup" class="remove_link image"> </div>
+    <br/>
+    <b><div id="title-container" class="tb-text"> </div></b>
+    <br/>
+    <div id="message-container" class="tb-text"> </div>
+  </div>
+  
+  <div class="tb-page" id="tab-bundler-container">
+    <div id="bundles-divider" class='image page-divider pointer tb-text' container="own-bundles" title="Bundles (SHIFT+B)"></div>
+    <div id="archived-bundles-divider" class='image page-divider pointer tb-text' container="archived-bundles" title="Archived Bundles (SHIFT+A)"></div>
+    <div id="shared-bundles-divider" class='image page-divider pointer tb-text shared-bundles-divider' container="shared-bundles" title="Shared Bundles (SHIFT+S)"><span id="collaboration-notifications" class="notification image"></span></div>
+    <div id="search" class="image icons right search-page-toggler" title="Search (SHIFT+F)"> </div>
+    <div id="pull-wheel" class="right"> </div>
+    <div id="own-bundles" class="bundle-container"> </div>
+    <div id="archived-bundles" class="bundle-container" hidden> </div>
+    <div id="shared-bundles" class="bundle-container" hidden> </div>
+    <div class="image" id="add_bundle_row"> 
+      <input id="add_bundle_input" class='tb-text' default="New Bundle." type="text"/>
+      <div class="image add_bundle" id="add_bundle"> </div>
+    </div>
+  </div>
+
+  <div class="tb-page tb-text" id="search-container" hidden>
+    <input class="input-text-box tb-text typeahead" id="search-box" type="text" title="Search your bundles for specific links.">
+    <br/><br/>
+    <div class="image tb-button cancel-button search-page-toggler" title="Cancel"> </div>
+    <div class="tb-button search-page-toggler" title="Visit Page/Search on Yahoo"> </div>
+  </div>
+
+  <div class="tb-page tb-text" id="sign-in-container" hidden>
+    <span class="error-text" id="tb-sign-in-error"> </span>
+    <div class="input-text-box-container">
+      <input class="input-text-box" id="email" default="Email" type="text"/>
+    </div>
+    <div class="input-text-box-container">
+      <input class="input-text-box" default="Password" id="password" type="password"/>
+    </div>    
+    <div class="input-text-box-container">
+      <div class="image tb-button login" id="login" title="Login to Tab Bundler!"> </div>
+      <div class="image tb-button sign-up-page-toggler sign-up" title="Sign up with Tab Bundler!"> </div>
+      <div class="image tb-button cancel-button login-page-toggler" title="Cancel"> </div>
+      <div id="tb-forgot-password" title="Forgot your password?"> <span class="mini-text right"><a href="http://www.tabbundler.com/forgotten-password">Forgot your password?</a></span> </div>
+    </div>
+  </div>
+
+  <div class="tb-page tb-text" id="sign-up-container" hidden>
+    <p>
+      <span class="new-install-only" hidden>Thanks for installing Tab Bundler!</span>
+      <span class="new-install-only">We're excited to better serve you!</span>
+      Sign up below to gain the ability to sync, share, and collaborate your bundles.
+      <span class="new-install-only highlight" hidden>By signing up right now, you'll get two extra free synced bundles.</span>
+    </p>
+    <span class="error-text" id="tb-sign-up-error"> </span>
+    <div class="input-text-box-container">
+      <input class="input-text-box" id="sign-up-name" placeholder="Name" type="text"/>
+    </div>
+    <div class="input-text-box-container">
+      <input class="input-text-box" id="sign-up-email" placeholder="Email" type="text"/>
+    </div>
+    <div class="input-text-box-container">
+      <input class="input-text-box" placeholder="Password" id="sign-up-password" type="password"/>
+    </div>    
+    <div class="input-text-box-container">
+      <input class="input-text-box" id="referral-code" placeholder="Referral Code" type="text"/>
+    </div>
+    <div class="input-text-box-container">
+      <input type="checkbox" id="can-contact" name="canContact" checked>
+      By checking this box, you agree to letting us contact you.
+    </div>
+    <div class="input-text-box-container">
+      <div class="image tb-button sign-up" id="sign-up" title="Sign up with Tab Bundler!"> </div>
+      <div class="image tb-button cancel-button sign-up-page-toggler new-install-only" title="Cancel"> </div>
+      <div class="right pointer sign-up-page-toggler new-install-only mini-text" href="#" hidden>I'll sign up later</div>
+      <i id="sign-up-wheel" class="left" hidden></i>
+    </div>
+  </div>
+
+  <div class="tb-page tb-text" id="share-container" hidden>
+    What should your recipients be allowed to do?
+    <select id="collaborate-type" class="input-text-box full-width left">
+      <option value="view-only">View-Only</option>
+      <option value="edit">Edit</option>
+      <!-- <option value="publish">Publish</option> -->
+    </select> 
+    <span class="mini-text collaborate-type-text full-width left view-only-text">(Recipients will recieve the link to the webpage.)</span> 
+    <span class="mini-text collaborate-type-text full-width left edit-text" hidden>(Recipients will have this bundle show up in their extension. They will be able to add or delete tabs from it. If they delete the bundle however, they are only deleting it for themselves.)</span>
+    <span class="mini-text collaborate-type-text full-width left publish-text" hidden>(Bundle will be added to the store. Anyone can view it, but only yourself can edit it.)</span>
+
+    <div id='link-container' class='collaborate-type-text view-only-text full-width left'>
+      <div class='link-container selectable'>
+        <a id='full-link' class='left'> </a> <span toggle='link-container' focus="path-container" class='data-toggler mini-text pointer'>(edit)</span>
+      </div>
+      <div class='link-container' hidden>
+        <span class="left full-width">http://www.tabbundler.com/<span id="username-container"></span>/</span>
+        <input type="text" id="path-container" class="left full-width"/>
+      </div>
+    </div>
+
+    <div id="description-container" class="left">
+      <div class='description-container'>
+        <span id='description' class='left'> </span> <span toggle='description-container' focus="description-input" class='data-toggler mini-text pointer'>(edit)</span>
+      </div>
+      <div class='description-container' hidden>
+        <textarea id="description-input" class="tb-text" placeholder="Add a short description to the bundle to be inserted into emails and your shared link website. (optional)"> </textarea>
+        <br/>
+        <br/>
+        <span class="mini-text pointer">(save)</span>
+      </div>
+    </div>
+
+    <div id='collaborate-email' hidden>
+      <input type="text" class='email typeahead value left full-width input-text-box' placeholder='Email'>
+    </div>
+    <div id="collaborate-email-container" class='email-container full-width left'> </div>
+
+    <div id="share-footer" class="left full-width">
+      <div id="submit-share" class="image tb-button submit-button left" title="Cancel"> </div>
+      <div id="cancel-share" class="image tb-button cancel-button share-page-toggler left" title="Cancel"> </div>
+      <i id="share-wheel" class="left" hidden></i>
+      <div id="add-collaborate-email" class="add_page icon image right"> </div>
+    </div>
+  </div>
+
+  <div class="tb-page tb-text" id="instructions-container" hidden>
+    <div id="instruction-container" class="left">
+    </div>
+    <p class="center">
+      QUESTIONS?
+    </p>
+    <p>
+      If you have any ideas to make Tab Bundler even better, or have any questions or concerns that are not covered in these instructions, fill out the details below and we'll get back to you as soon as we can!
+    </p>
+    <div class="input-text-box-container">
+      <textarea id="feature-request" placeholder="Feature Request"> </textarea>
+    </div>
+    <div class="input-text-box-container">
+      <div class="image tb-button accept left" id="send-email" title="Contact Us!"> </div>
+      <div class="image tb-button cancel-button instructions-page-toggler" title="Cancel"> </div>
+      <i id="instructions-wheel" class="left" hidden></i>
+    </div>
+  </div>
+
+  <div class="tb-page tb-text" id="email-container" hidden>
+    <p id="sorting-container">
+      <span id='add-contact' class='pointer left'>add new</span>
+      <span id='show-all-contacts' class='pointer left'>show all</span>
+    </p>
+    <p id="email-list-container"> </p>
+    <input id="email-list-name" type="text" class='left full-width input-text-box' placeholder='Contact(s) Name'>
+    <div id='add-email' hidden>
+      <input type="email" class='email typeahead value left full-width input-text-box' placeholder='Email'>
+    </div>
+    <div id="add-email-container" class='email-container full-width left'> </div>
+    <div id="add-email-footer" class="left full-width">
+      <div id="confirm-email" class="image tb-button accept left" title="Accept"> </div>
+      <div id="cancel-email" class="image tb-button cancel-button email-page-toggler" title="Cancel"> </div>
+      <div id="add-email-button" class="add_page icon image right"> </div>
+    </div>
+  </div>
+
+  <div class="tb-page tb-text" id="upgrade-container" hidden>
+    <p>
+      Your synced bundles will appear in your account within 5 minutes if you purchase while signed in. Otherwise, an email that includes a link to the synced bundles will be sent to your account.
+    </p>
+    <div class="pay-tier left">
+      <h1 class="pay-tier-title center">FIVE</h1>
+      <div class="pay-info left">
+        <h1 class="left full-width"><i class="fa fa-child fa-3x"></i></h1>
+        <h3 class="left full-width">FREE</h3>
+      </div>
+      <div class="pay-pitch left">
+        <p>
+          Write about and follow us on Twitter, to get two free synced bundles through a direct message. Refer a friend, and automatically get another five!
+        </p>
+        <div id="twitter-container"> </div>
+        <a id="upgrade-referral-link"> </a>
+        </div>
+    </div>
+    <br/>
+    <div class="pay-tier left">
+      <h1 class="pay-tier-title center">TEN (MOST POPULAR)</h1>
+      <div class="pay-info left">
+        <h1 class="left full-width"><i class="fa fa-play-circle-o fa-3x"></i></h1>
+        <h3 class="left full-width">$<span id="ten-price"></span> USD</h3>
+        <h3 id="ten-message" class="left full-width"></h3>
+      </div>
+      <div class="pay-pitch left" id="pay-pitch-ten">
+        <p id="ten-description">
+        </p>
+      </div>
+    </div>
+    <br/>
+    <div class="pay-tier left">
+      <h1 class="pay-tier-title center">UNLIMITED</h1>
+      <div class="pay-info left">
+        <h1 class="left full-width"><i class="fa fa-users fa-3x"></i></h1>
+        <h3 class="left full-width">$<span id="unlimited-price"></span> USD</h3>
+        <h3 id="unlimited-message" class="left full-width"></h3>
+      </div>
+      <div class="pay-pitch left" id="pay-pitch-unlimited">
+        <p id="unlimited-description">
+        </p>
+      </div>
+    </div>
+    <div class="image tb-button cancel-button upgrade-page-toggler" title="Cancel"> </div>
+    <i id="upgrade-wheel" class="left" hidden> </i>
+  </div>
+
+  <div class="tb-page tb-text" id="options-container" hidden>
+    <div class="image import tb-button" id="export"> </div>
+    <div class="image import tb-button" id="import">
+      <input id="import_input" type="file"/>
+    </div>
+    <div id="options" class="full-width left"> </div>
+    <br/>
+    <div id="version" class="right">V2.6.12</div>
+    <div class="image tb-button cancel-button options-page-toggler" title="Cancel"> </div>
+  </div>
+  
+  <script src="/media/static/js/shared/utils/general.min.js"></script>
+  <script src="/media/static/js/shared/utils/string.min.js"></script>
+  <script src="/media/static/js/shared/utils/http.min.js"></script>
+  <script src="/media/static/js/shared/utils/status.min.js"></script>
+  <script src="/media/static/js/shared/utils/db.min.js"></script>
+  
+  <script src="/media/static/js/utils/badge.min.js"></script>
+  <script src="/media/static/js/utils/browser.min.js"></script>
+  <script src="/media/static/js/utils/autosave.min.js"></script>
+  <script src="/media/static/js/utils/context-menu.min.js"></script>
+
+  <script src="/media/static/js/shared/mixins/utils/accessor.min.js"></script>
+  <script src="/media/static/js/shared/mixins/utils/version.min.js"></script>
+  <script src="/media/static/js/shared/mixins/utils/options.min.js"></script>
+  <script src="/media/static/js/shared/mixins/utils/order.min.js"></script>
+  <script src="/media/static/js/shared/mixins/utils/server.min.js"></script>
+
+  <script src="/media/static/js/shared/mixins/marketing/analytics.min.js"> </script>
+  <script src="/media/static/js/shared/mixins/marketing/messages.min.js"></script>
+
+  <script src="/media/static/js/shared/mixins/account/abstract/server_communication.min.js"></script>
+  <script src="/media/static/js/shared/mixins/account/abstract/bundle_accessor.min.js"></script>
+  <script src="/media/static/js/shared/mixins/utils/email-list.min.js"></script>
+  <script src="/media/static/js/shared/mixins/account/account.min.js"></script>
+  <script src="/media/static/js/shared/mixins/account/email.min.js"></script>
+  <script src="/media/static/js/shared/mixins/account/share.min.js"></script>
+  <script src="/media/static/js/shared/mixins/account/subscription.min.js"></script>
+  <script src="/media/static/js/shared/mixins/account/synchronizer.min.js"></script>
+
+  <script src="/media/static/js/shared/mixins/bundles/bundle-base.min.js"></script>
+  <script src="/media/static/js/shared/mixins/bundles/tab-base.min.js"></script>
+
+  <script src="/media/static/js/widgets/pinned_tabs.min.js"></script>
+  <script src="/media/static/js/widgets/popup.min.js"></script>
+  <script src="/media/static/js/widgets/social.min.js"></script>
+  <script src="/media/static/js/widgets/tooltip.min.js"></script>
+  <script src="/media/static/js/widgets/wheel.min.js"></script>
+  <script src="/media/static/js/widgets/header.min.js"></script>
+
+  <script src="/media/static/js/pages/bundles/tab.min.js"></script>
+  <script src="/media/static/js/pages/bundles/bundle.min.js"></script>
+  <script src="/media/static/js/pages/bundles/subscription.min.js"></script>
+
+  <script src="/media/static/js/pages/page.min.js"></script>
+  <script src="/media/static/js/pages/email.min.js"></script>
+  <script src="/media/static/js/pages/instructions.min.js"></script>
+  <script src="/media/static/js/pages/options.min.js"></script>
+  <script src="/media/static/js/pages/share.min.js"></script>
+  <script src="/media/static/js/pages/search.min.js"></script>
+  <script src="/media/static/js/pages/login.min.js"></script>
+  <script src="/media/static/js/pages/signup.min.js"></script>
+  <script src="/media/static/js/pages/upgrade.min.js"></script>
+  <script src="/media/static/js/pages/bundles/shared_bundle_divider.min.js"></script>
+
+  <script src="/media/static/js/pages/bundles/bundle_container/bundle_container.min.js"></script>
+  <script src="/media/static/js/pages/bundles/bundle_container/archived.min.js"></script>
+  <script src="/media/static/js/pages/bundles/bundle_container/own.min.js"></script>
+  <script src="/media/static/js/pages/bundles/bundle_container/shared.min.js"></script>
+  <script src="/media/static/js/pages/bundles/tb.min.js"></script>
+
+  <script src="/media/static/js/main.min.js"></script>
+
+  <!-- UNIT TESTS -->
+  <!--
+  <script src="/tests/framework/unitTest.js"></script>
+  <script src="/tests/shared/utils/dbTest.js"></script>
+  -->
+</body>
+</html>
