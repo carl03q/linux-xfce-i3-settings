@@ -16,15 +16,15 @@ application/x-raw-disk-image=open-fuse-iso.desktop
 
 [Added Associations]
 application/pdf=qpdfview.desktop;
-application/octet-stream=sublime-text.desktop;mousepad.desktop;
+application/octet-stream=sublime-text.desktop;mousepad.desktop;libreoffice-startcenter.desktop;
 application/x-gettext-translation=mousepad.desktop;
 application/x-wine-extension-ini=mousepad.desktop;
 image/gif=viewnior.desktop;gimp.desktop;
-application/x-compressed-tar=engrampa.desktop;
+application/x-compressed-tar=engrampa.desktop;pamac-install.desktop;
 application/x-shellscript=mousepad.desktop;
 text/plain=mousepad.desktop;
 text/markdown=mousepad.desktop;
-image/png=viewnior.desktop;gimp.desktop;
+image/png=gimp.desktop;viewnior.desktop;
 application/x-trash=mousepad.desktop;
 application/xml=mousepad.desktop;
 image/jpeg=gimp.desktop;viewnior.desktop;
@@ -33,3 +33,8 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoff
 application/msword=libreoffice-writer.desktop;
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
+image/svg+xml=viewnior.desktop;
+application/x-font-ttf=firefox.desktop;
+application/x-font-otf=gimp.desktop;firefox.desktop;
+text/x-install=mousepad.desktop;
+image/x-xcf=gimp.desktop;

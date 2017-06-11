@@ -1,9 +1,6 @@
-2017/06/04-13:31:55.586 5672 Reusing MANIFEST /home/carlos/.config/google-chrome/Default/Session Storage/MANIFEST-000001
-2017/06/04-13:31:55.595 5672 Recovering log #38
-2017/06/04-13:31:55.677 5672 Reusing old log /home/carlos/.config/google-chrome/Default/Session Storage/000038.log 
-2017/06/04-13:36:44.019 7785 Level-0 table #54: started
-2017/06/04-13:36:44.125 7785 Level-0 table #54: 957324 bytes OK
-2017/06/04-13:36:44.333 7785 Delete type=0 #38
-2017/06/04-14:04:14.221 7785 Level-0 table #56: started
-2017/06/04-14:04:14.330 7785 Level-0 table #56: 408512 bytes OK
-2017/06/04-14:04:14.381 7785 Delete type=0 #53
+2017/06/07-18:23:37.578 21300 Reusing MANIFEST /home/carlos/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2017/06/07-18:23:37.578 21300 Recovering log #58
+2017/06/07-18:23:37.579 21300 Reusing old log /home/carlos/.config/google-chrome/Default/Session Storage/000058.log 
+2017/06/07-18:23:48.262 22148 Level-0 table #62: started
+2017/06/07-18:23:48.336 22148 Level-0 table #62: 884223 bytes OK
+2017/06/07-18:23:48.378 22148 Delete type=0 #58

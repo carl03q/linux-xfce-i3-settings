@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop,exo-mail-reader.desktop,pamac-manager.desktop
-recent=exo-terminal-emulator.desktop,sublime-text.desktop,firefox.desktop,GitKraken.desktop,exo-file-manager.desktop,pamac-manager.desktop,pycharm-community.desktop,nm-connection-editor.desktop,catfish.desktop,blender.desktop
+recent=exo-file-manager.desktop,google-chrome.desktop,exo-terminal-emulator.desktop,sublime-text.desktop,firefox.desktop,GitKraken.desktop,pamac-manager.desktop,pycharm-community.desktop,nm-connection-editor.desktop,catfish.desktop
 button-title=Applications
 button-icon=/home/carlos/Pictures/umbrella.png
 button-single-row=false

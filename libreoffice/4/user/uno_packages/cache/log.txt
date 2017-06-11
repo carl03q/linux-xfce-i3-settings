@@ -9,3 +9,10 @@
 ###### Progress log entry 2017-06-07 00:03:01 ######
 ###### Progress log entry 2017-06-07 00:03:19 ######
 ###### Progress log entry 2017-06-07 00:03:43 ######
+###### Progress log entry 2017-06-07 16:50:16 ######
+ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: spanish.es_ANY.dicts.from.rla-es", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }
+ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: spanish.es_ANY.dicts.from.rla-es", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }
+Copying: es_ANY.oxt
+ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: com.sun.star.comp.Calc.NLPSolver", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }
+ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: com.sun.star.comp.Calc.NLPSolver", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }
+ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: com.sun.wiki-publisher", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }

@@ -146,7 +146,15 @@
 					"file": "/home/carlos/.config/i3/config",
 					"settings":
 					{
-						"buffer_size": 9745,
+						"buffer_size": 11004,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/carlos/.config/i3/scripts/volume_manager",
+					"settings":
+					{
+						"buffer_size": 151,
 						"line_ending": "Unix"
 					}
 				},
@@ -154,17 +162,16 @@
 					"file": "/home/carlos/.config/i3/i3blocks.conf",
 					"settings":
 					{
-						"buffer_size": 552,
+						"buffer_size": 1422,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/carlos/.config/i3/config-manjaro",
+					"file": "/home/carlos/.config/i3/scripts/volume",
 					"settings":
 					{
-						"buffer_size": 12514,
-						"line_ending": "Unix",
-						"name": "# vim:filetype=i3"
+						"buffer_size": 1573,
+						"line_ending": "Unix"
 					}
 				}
 			],
@@ -192,6 +199,16 @@
 			},
 			"file_history":
 			[
+				"/home/carlos/.config/i3/scripts/volume",
+				"/home/carlos/.config/i3/config-manjaro",
+				"/home/carlos/.config/i3/scripts/spotify.py",
+				"/home/carlos/.config/i3/scripts/strcut.py",
+				"/home/carlos/.config/i3/scripts/network",
+				"/home/carlos/.config/i3/scripts/cpu_usage",
+				"/home/carlos/.config/i3/scripts/memory",
+				"/home/carlos/Downloads/lab.pkt",
+				"/home/carlos/.config/i3/scripts/get_title",
+				"/home/carlos/.fonts/fontawesome-webfont.eot"
 			],
 			"find":
 			{
@@ -209,6 +226,26 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"set ",
+					"$",
+					".config",
+					"sink",
+					"Desktop",
+					"spotif",
+					"Desktop",
+					"play",
+					"spotif",
+					"Mod",
+					"mod",
+					"+spac",
+					"mod",
+					"mod2",
+					"mod",
+					"space",
+					"ctrl+",
+					"logout",
+					"load_average",
+					"decimals",
 					"alwa",
 					"lock",
 					"i3lock",
@@ -257,7 +294,7 @@
 			"groups":
 			[
 				{
-					"selected": 2,
+					"selected": 0,
 					"sheets":
 					[
 						{
@@ -265,48 +302,48 @@
 							"file": "/home/carlos/.config/i3/config",
 							"settings":
 							{
-								"buffer_size": 9745,
+								"buffer_size": 11004,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										445,
-										445
+										10114,
+										10114
 									]
 								],
 								"settings":
 								{
 									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-									"tab_size": 8,
+									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 102.0,
+								"translation.y": 4956.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
 						},
 						{
 							"buffer": 1,
-							"file": "/home/carlos/.config/i3/i3blocks.conf",
+							"file": "/home/carlos/.config/i3/scripts/volume_manager",
 							"settings":
 							{
-								"buffer_size": 552,
+								"buffer_size": 151,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										552,
-										552
+										61,
+										61
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -316,29 +353,54 @@
 						},
 						{
 							"buffer": 2,
-							"file": "/home/carlos/.config/i3/config-manjaro",
+							"file": "/home/carlos/.config/i3/i3blocks.conf",
 							"settings":
 							{
-								"buffer_size": 12514,
+								"buffer_size": 1422,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										12356,
-										12356
+										1331,
+										1331
 									]
 								],
 								"settings":
 								{
-									"auto_name": "# vim:filetype=i3",
-									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+								},
+								"translation.x": 448.0,
+								"translation.y": 1206.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/carlos/.config/i3/scripts/volume",
+							"settings":
+							{
+								"buffer_size": 1573,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										606,
+										606
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Perl/Perl.tmLanguage",
 									"tab_size": 4,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 5764.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -403,7 +465,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 50.0,
+			"side_bar_width": 151.0,
 			"status_bar_visible": true,
 			"window_id": 2,
 			"workspace_name": ""
