@@ -146,7 +146,7 @@
 					"file": "/home/carlos/.config/i3/config",
 					"settings":
 					{
-						"buffer_size": 11004,
+						"buffer_size": 10947,
 						"line_ending": "Unix"
 					}
 				},
@@ -302,15 +302,15 @@
 							"file": "/home/carlos/.config/i3/config",
 							"settings":
 							{
-								"buffer_size": 11004,
+								"buffer_size": 10947,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										10114,
-										10114
+										10102,
+										10102
 									]
 								],
 								"settings":
