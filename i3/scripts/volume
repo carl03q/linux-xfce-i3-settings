@@ -2,7 +2,7 @@
 
 ## The sink we are interested in should be given as the 
 ## 1st argument to the script.
-my $sink=$ARGV[0] || die("Need a sink number as the first argument\n");
+#my $sink=$ARGV[0] || die("Need a sink number as the first argument\n");
 
 ## If the script has been run with a second argument,
 ## that argument will be the volume threshold we are checking
@@ -15,6 +15,7 @@ open(my $fh, '-|', 'pactl list sinks');
 ## Set the record separator to consecutive newlines (same as -000)
 ## this means we read the info for each sink as a single "line".
 $/="\n\n";
+$sink = $ARGV[0];
 
 ## Go through the pactl output
 while (<$fh>) {
@@ -40,7 +41,14 @@ while (<$fh>) {
         ## Else, if the script has been run with just one argument,
         ## print the current volume.
         else {
-            print "$volume%\n";
+            print "$volume ";
         }
     }#
+    if (/#$sink/) {
+        #/Volume:/;
+        if(/Mute: yes/) {
+            print "mute\n"
+        }
+        
+    }
 }
