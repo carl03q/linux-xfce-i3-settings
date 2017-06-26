@@ -1,3 +1,11 @@
 #!/bin/sh
 sink=$(pactl list short | grep RUNNING | cut -f 1)
-pactl set-sink-volume $sink $15%; pactl set-sink-mute $sink off && pkill -RTMIN+2 i3blocks
+if [ "$sink" == '' ]; then
+  sink=0
+fi
+
+if [ "$1" == 'mute' ]; then
+	pactl set-sink-mute $sink toggle && pkill -RTMIN+2 i3blocks
+else
+	pactl set-sink-volume $sink $15%; pactl set-sink-mute $sink off && pkill -RTMIN+2 i3blocks
+fi

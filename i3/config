@@ -83,8 +83,12 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
+new_window none
+new_float normal 2
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+#bindsym $mod+Shift+space floating enable
+bindsym $mod+Control+space border toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -102,7 +106,7 @@ set $w3 "3: Browser "
 set $w4 "4: "
 set $w5 "5: "
 set $w6 "6: "
-set $w7 "7: "
+set $w7 "7: WhatsApp "
 set $w8 "8: Terminal "
 set $w9 "9: Windows "
 set $w0 "10: Spotify "
@@ -236,8 +240,8 @@ for_window [window_type="menu"] floating enable
 
 for_window [class="(?i)gsimplecal"] floating enable, move position mouse, move down $height px
 for_window [class="(?i)qemu-system"] floating enable
-for_window [class="(?i)VirtualBox" title="(?i)Manager"] floating enable
-for_window [class="(?i)VirtualBox"] floating enable
+##for_window [class="(?i)VirtualBox" title="(?i)Manager"] floating enable
+##for_window [class="(?i)VirtualBox"] floating enable
 for_window [class="(?i)blueman"] floating enable
 
 #for_window [instance="sun-awt-X11-XFramePeer"] floating enable
@@ -248,10 +252,6 @@ for_window [class="(?i)recordmydesktop"] floating enable
 for_window [class="(?i)pavucontrol"] floating enable, move position mouse
 for_window [class="(?i)pavucontrol" instance="pavucontrol-bar"] move down $height px
 
-#assign [class="(?i)chrome"]                       $ws1
-#assign [class="(?i)eclipse" window_type="splash"] $ws3
-#assign [class="(?i)eclipse" window_type="normal"] $ws3
-#assign [class="(?i)thunderbird"]   
 
 #WINDOWS SETTINGS
 for_window [class="sublime_text"] border pixel none
@@ -261,13 +261,22 @@ for_window [class="Pamac-manager"] floating enable
 #DEFAULT DESKTOP
 for_window [class="sublime_text"] move window to workspace $w2
 for_window [class="Firefox"] move window to workspace $w3
-for_window [class="VirtualBox"] move window to workspace $w9
+for_window [class="Whatsie"] move window to workspace $w7
+###########for_window [class="VirtualBox"] move window to workspace $w9
 for_window [class="Spotify"] move window to workspace $w0
+
+for_window [class="(?i)virtualbox"] floating enable
+bindsym $mod+c move absolute position center
+#for_window [class="Thunar"] floating enable move right 330px,move down 70px
+
 
 
 # AUTOSTART
 exec_always --no-startup-id feh --bg-fill /home/carlos/Pictures/nude-girl.png 
 exec_always --no-startup-id compton -f
+exec --no-startup-id "conky -c /usr/share/conky/conky1.10_shortcuts_solarized && conky -c /usr/share/conky/conky_solarized"
+
+
 
 exec --no-startup-id nm-applet &
 exec --no-startup-id blueman-applet &
@@ -278,12 +287,15 @@ exec --no-startup-id xedgewarp -b
 
 exec --no-startup-id firefox
 exec --no-startup-id subl
+exec --no-startup-id whatsie
 exec --no-startup-id spotify
 exec --no-startup-id blockify
 
 exec --no-startup-id xfce4-notes
 exec --no-startup-id dropbox
 exec --no-startup-id xfce4-power-manager
+exec --no-startup-id pa-applet
+exec --no-startup-id pamac-tray
 
 #Config on start
 #enable touch clic
@@ -299,7 +311,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight - 10 && pkill -RTMIN+1 i3blocks"
 set $SCRIPT_DIR /home/carlos/.config/i3/scripts
 bindsym XF86AudioRaiseVolume exec "$SCRIPT_DIR/volume_manager +"
 bindsym XF86AudioLowerVolume exec "$SCRIPT_DIR/volume_manager -"
-bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute $(pactl list short | grep RUNNING | cut -f 1) toggle && pkill -RTMIN+2 i3blocks"
+bindsym XF86AudioMute exec --no-startup-id "$SCRIPT_DIR/volume_manager mute"
 #bindsym XF86AudioMute exec --no-startup-id "amixer set Master mute"
 
 bindsym XF86AudioPlay exec playerctl play-pause
