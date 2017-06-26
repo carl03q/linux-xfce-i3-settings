@@ -312,8 +312,11 @@
          }, {
             "date_added": "13119490427423561",
             "id": "128",
+            "meta_info": {
+               "last_visited_desktop": "13142700218335099"
+            },
             "name": "Build a TensorFlow Image Classifier in 5 Min - YouTube",
-            "sync_transaction_version": "1",
+            "sync_transaction_version": "7",
             "type": "url",
             "url": "https://www.youtube.com/watch?v=QfNvhPx5Px8"
          }, {
@@ -496,7 +499,7 @@
          "name": "Other bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "2",
+      "sync_transaction_version": "8",
       "synced": {
          "children": [ {
             "date_added": "13095414780933124",
@@ -1096,10 +1099,10 @@
             "date_added": "13137564751977679",
             "id": "75",
             "meta_info": {
-               "last_visited": "13140152686910856"
+               "last_visited": "13142872999248557"
             },
             "name": "lunarbaboon - Comics - Greetings!",
-            "sync_transaction_version": "1",
+            "sync_transaction_version": "8",
             "type": "url",
             "url": "http://www.lunarbaboon.com/comics/greetings.html"
          }, {
@@ -1114,7 +1117,7 @@
             "url": "https://people.eecs.berkeley.edu/~lisa_anne/LRCN_video"
          } ],
          "date_added": "13141007525454860",
-         "date_modified": "13139164904575774",
+         "date_modified": "13142903128199404",
          "id": "3",
          "name": "Mobile bookmarks",
          "type": "folder"

@@ -1,0 +1,11 @@
+<dom-module id="qowt-border-button">
+  <link rel="import" type="css" href="../../baseButton/baseButton.css">
+  <template>
+    <style>
+      :host(.focused:not([disabled])){
+        background-color: #eee;
+      }
+    </style>
+    <iron-icon src="[[src]]" icon="[[icon]]"></iron-icon><content></content>
+  </template>
+</dom-module>

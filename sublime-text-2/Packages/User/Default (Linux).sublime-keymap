@@ -1,2 +1,10 @@
 [
+    {
+        "keys": ["ctrl+s"], "command": "browser_refresh", "args": {
+            "auto_save": true,
+            "delay": 0.5,
+            "activate": true,
+            "browsers" : ["chrome"]
+        }
+    }
 ]

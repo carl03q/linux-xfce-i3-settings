@@ -16,3 +16,13 @@ Copying: es_ANY.oxt
 ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: com.sun.star.comp.Calc.NLPSolver", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }
 ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: com.sun.star.comp.Calc.NLPSolver", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }
 ERROR: (com.sun.star.lang.IllegalArgumentException) { { { Message = "There is no such extension deployed: com.sun.wiki-publisher", Context = (com.sun.star.uno.XInterface) @27c15f0 } }, ArgumentPosition = (short) -1 }
+###### Progress log entry 2017-06-12 15:54:58 ######
+###### Progress log entry 2017-06-12 16:18:36 ######
+###### Progress log entry 2017-06-14 09:21:11 ######
+###### Progress log entry 2017-06-14 20:17:54 ######
+###### Progress log entry 2017-06-20 16:01:18 ######
+###### Progress log entry 2017-06-20 16:02:21 ######
+###### Progress log entry 2017-06-20 16:41:11 ######
+###### Progress log entry 2017-06-20 17:08:39 ######
+###### Progress log entry 2017-06-21 07:49:01 ######
+###### Progress log entry 2017-06-26 13:04:49 ######

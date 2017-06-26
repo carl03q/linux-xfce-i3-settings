@@ -36,4 +36,8 @@ colors() {
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
 neofetch --ascii_distro arch --ascii_colors 6 37
-PATH=$PATH:/opt/anaconda/bin
+#PATH=/opt/anaconda/bin:$PATH
+export PATH="/opt/anaconda/bin:$PATH"
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/home/carlos/anaconda3/bin:$PATH"

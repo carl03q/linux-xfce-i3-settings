@@ -1,5 +1,6 @@
 [Bookmarks]
 [Recent]
+/run/media/carlos/DIEGO/
 /home/carlos/
 /run/media/carlos/Kenzo/
 /home/carlos/Pictures/

@@ -1,1 +1,3 @@
+/run/media/carlos/DIEGO/Proyecto2_Prototipo2.blend
+/run/media/carlos/DIEGO/Proyecto2_Prototipo.blend
 /home/carlos/cara.blend

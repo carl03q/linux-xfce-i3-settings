@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop,exo-mail-reader.desktop,pamac-manager.desktop
-recent=exo-file-manager.desktop,google-chrome.desktop,exo-terminal-emulator.desktop,sublime-text.desktop,firefox.desktop,GitKraken.desktop,pamac-manager.desktop,pycharm-community.desktop,nm-connection-editor.desktop,catfish.desktop
+recent=GitKraken.desktop,pamac-manager.desktop,google-chrome.desktop,virtualbox.desktop,exo-file-manager.desktop,exo-terminal-emulator.desktop,pamac-updater.desktop,firefox.desktop,exo-web-browser.desktop,sublime-text.desktop
 button-title=Applications
 button-icon=/home/carlos/Pictures/umbrella.png
 button-single-row=false
@@ -19,8 +19,8 @@ display-recent-default=false
 position-search-alternate=false
 position-commands-alternate=false
 position-categories-alternate=false
-menu-width=623
-menu-height=612
+menu-width=565
+menu-height=577
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true

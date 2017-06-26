@@ -8,13 +8,26 @@
 <VirtualBox xmlns="http://www.virtualbox.org/" version="1.12-linux">
   <Global>
     <ExtraData>
+      <ExtraDataItem name="GUI/ActivateHoveredMachineWindow" value="true"/>
       <ExtraDataItem name="GUI/DetailsPageBoxes" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="298,109,770,550"/>
-      <ExtraDataItem name="GUI/SplitterSizes" value="255,509"/>
-      <ExtraDataItem name="GUI/UpdateCheckCount" value="3"/>
-      <ExtraDataItem name="GUI/UpdateDate" value="1 d, 2017-06-07, stable, 5.1.22"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=488be5bc-de0d-4be1-809a-8035f438895d,m=c775e285-4457-4745-a00b-5ed037ede22b"/>
+      <ExtraDataItem name="GUI/HideDescriptionForWizards" value="NewVD"/>
+      <ExtraDataItem name="GUI/HostScreenSaverDisabled" value="false"/>
+      <ExtraDataItem name="GUI/Input/AutoCapture" value="false"/>
+      <ExtraDataItem name="GUI/Input/HostKeyCombination" value="65508"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=Tensorflow-ASL"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="240,65,886,629"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/home/carlos/Downloads"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/carlos/Downloads/debian-stretch-DI-rc5-amd64-netinst.iso,/home/carlos/Downloads/debian-live-9.0.0-amd64-gnome.iso,/home/carlos/ISO/es-mx_windows_10_multiple_editions_version_1703.iso,/home/carlos/Downloads/elementaryos-0.4.1-stable.20170517.iso"/>
+      <ExtraDataItem name="GUI/SplitterSizes" value="333,547"/>
+      <ExtraDataItem name="GUI/SuppressMessages" value="confirmGoingFullscreen,confirmInputCapture,remindAboutMouseIntegration,showRuntimeError.warning.BrokenSharedFolder"/>
+      <ExtraDataItem name="GUI/UpdateCheckCount" value="11"/>
+      <ExtraDataItem name="GUI/UpdateDate" value="1 d, 2017-06-24, stable, 5.1.22"/>
     </ExtraData>
-    <MachineRegistry/>
+    <MachineRegistry>
+      <MachineEntry uuid="{488be5bc-de0d-4be1-809a-8035f438895d}" src="/home/carlos/VirtualBox VMs/W10/W10.vbox"/>
+      <MachineEntry uuid="{c775e285-4457-4745-a00b-5ed037ede22b}" src="/home/carlos/VirtualBox VMs/Tensorflow-ASL/Tensorflow-ASL.vbox"/>
+    </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>
         <DHCPServer networkName="HostInterfaceNetworking-vboxnet0" IPAddress="192.168.56.100" networkMask="255.255.255.0" lowerIP="192.168.56.101" upperIP="192.168.56.254" enabled="1"/>

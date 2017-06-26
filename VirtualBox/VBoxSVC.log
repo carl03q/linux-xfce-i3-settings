@@ -1,35 +1,107 @@
 VirtualBox XPCOM Server 5.1.22 r115126 linux.amd64 (May  9 2017 19:27:33) release log
-00:00:00.000171 main     Log opened 2017-06-06T12:00:29.421787000Z
-00:00:00.000173 main     Build Type: release
-00:00:00.000176 main     OS Product: Linux
-00:00:00.000176 main     OS Release: 4.9.30-1-MANJARO
-00:00:00.000177 main     OS Version: #1 SMP PREEMPT Thu May 25 20:31:43 UTC 2017
-00:00:00.000199 main     DMI Product Name: Inspiron 5559
-00:00:00.000203 main     DMI Product Version: 
-00:00:00.000239 main     Host RAM: 7692MB (7.5GB) total, 6162MB (6.0GB) available
-00:00:00.000243 main     Executable: /usr/lib/virtualbox/VBoxSVC
-00:00:00.000244 main     Process ID: 30529
-00:00:00.000245 main     Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.001643 main     IPC socket path: /tmp/.vbox-carlos-ipc/ipcd
-00:00:00.106053 nspr-2   VirtualBox: object creation starts
-00:00:00.106267 nspr-2   Home directory: '/home/carlos/.config/VirtualBox'
-00:00:00.106794 nspr-2   Loading settings file "/home/carlos/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:00.140002 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp1s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:00.141794 nspr-2   NAT: resolv.conf: nameserver 192.168.18.2
-00:00:00.141862 nspr-2   HostDnsMonitor: old information
-00:00:00.141874 nspr-2     no server entries
-00:00:00.141883 nspr-2     no domain set
-00:00:00.141891 nspr-2     no search string entries
-00:00:00.141953 nspr-2   HostDnsMonitor: new information
-00:00:00.141972 nspr-2     server 1: 192.168.18.2
-00:00:00.141988 nspr-2     no domain set
-00:00:00.141998 nspr-2     no search string entries
-00:00:00.142025 nspr-2   HostDnsMonitorProxy::notify
-00:00:00.149536 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:00.150673 nspr-2   VD: VDInit finished
-00:00:00.150932 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={0eb668d2-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:00.152675 nspr-2   VirtualBox: object created
-00:00:13.723640 main     VirtualBox: object deletion starts
-00:00:14.157787 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={0169423f-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
-00:00:18.724686 main     {00007fd9440129c0} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
-00:00:18.725126 main     VirtualBox: object deleted
+00:00:00.007154 main     Log opened 2017-06-23T15:56:50.933306000Z
+00:00:00.007156 main     Build Type: release
+00:00:00.007160 main     OS Product: Linux
+00:00:00.007160 main     OS Release: 4.9.31-1-MANJARO
+00:00:00.007161 main     OS Version: #1 SMP PREEMPT Wed Jun 7 19:39:15 UTC 2017
+00:00:00.007182 main     DMI Product Name: Inspiron 5559
+00:00:00.007187 main     DMI Product Version: 
+00:00:00.007253 main     Host RAM: 7692MB (7.5GB) total, 5649MB (5.5GB) available
+00:00:00.007266 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.007267 main     Process ID: 23909
+00:00:00.007268 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.009453 main     IPC socket path: /tmp/.vbox-carlos-ipc/ipcd
+00:00:00.113584 nspr-2   VirtualBox: object creation starts
+00:00:00.113812 nspr-2   Home directory: '/home/carlos/.config/VirtualBox'
+00:00:00.114385 nspr-2   Loading settings file "/home/carlos/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.117395 nspr-2   USB: Unknown USB device detected (idVendor: 0x8087, idProduct: 0x07dc). Please, report the idVendor and idProduct to virtualbox.org.
+00:00:00.117539 nspr-2   Successfully initialised host USB using sysfs
+00:00:00.142261 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp1s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.143012 nspr-2   NAT: resolv.conf: nameserver 192.168.18.2
+00:00:00.143034 nspr-2   HostDnsMonitor: old information
+00:00:00.143036 nspr-2     no server entries
+00:00:00.143039 nspr-2     no domain set
+00:00:00.143041 nspr-2     no search string entries
+00:00:00.143043 nspr-2   HostDnsMonitor: new information
+00:00:00.143045 nspr-2     server 1: 192.168.18.2
+00:00:00.143048 nspr-2     no domain set
+00:00:00.143050 nspr-2     no search string entries
+00:00:00.143055 nspr-2   HostDnsMonitorProxy::notify
+00:00:00.145359 nspr-2   VD: VDInit finished
+00:00:00.145429 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={0eb668d2-495e-5a36-8890-29999b5f030c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.148509 nspr-2   Loading settings file "/home/carlos/VirtualBox VMs/W10/W10.vbox" with version "1.15-linux"
+00:00:00.149109 nspr-2   Loading settings file "/home/carlos/VirtualBox VMs/Tensorflow-ASL/Tensorflow-ASL.vbox" with version "1.16-linux"
+00:00:00.149508 nspr-2   VirtualBox: object created
+00:00:12.350687 ApplWrit Loading settings file "/home/carlos/VirtualBox VMs/Tensorflow-ASL/Tensorflow-ASL.vbox" with version "1.16-linux"
+00:00:49.714030 USBPROXY USBProxyBackendLinux: Device 090c:1000 (sysfs:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1//device:/dev/vboxusb/002/004) isn't accessible. giving udev a few seconds to fix this...
+00:15:59.689650 ApplRead ERROR [COM]: aRC=NS_ERROR_INVALID_ARG (0x80070057) aIID={8398f026-4add-4474-5bc3-2f9f2140b23e} aComponent={ApplianceWrap} aText={Error reading OVA '/run/media/carlos/E444-4065/Tensorflow-ASL.ova' (VERR_INVALID_PARAMETER)}, preserve=false aResultDetail=-2
+00:17:27.513712 USBPROXY USBProxyBackendLinux: Device 0781:5567 (sysfs:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1//device:/dev/vboxusb/001/009) isn't accessible. giving udev a few seconds to fix this...
+00:18:14.299255 USBPROXY USBProxyBackendLinux: Device 0930:6545 (sysfs:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1//device:/dev/vboxusb/001/011) isn't accessible. giving udev a few seconds to fix this...
+00:18:19.808357 USBPROXY USBProxyBackendLinux: Device 0930:6545 (sysfs:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1//device:/dev/vboxusb/001/012) isn't accessible. giving udev a few seconds to fix this...
+00:19:33.129720 USBPROXY USBProxyBackendLinux: Device 0930:6545 (sysfs:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1//device:/dev/vboxusb/001/013) isn't accessible. giving udev a few seconds to fix this...
+00:39:31.804424 nspr-7   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={edba9d10-45d8-b440-1712-46ac0c9bc4c5} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:39:31.876584 nspr-7   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={b2547866-a0a1-4391-8b86-6952d82efaa0} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=0
+00:39:31.914903 nspr-5   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp1s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:39:33.786083 USBPROXY USBProxyBackendLinux: Device 0930:6545 (sysfs:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-1//device:/dev/vboxusb/001/014) isn't accessible. giving udev a few seconds to fix this...
+00:41:12.301027 ApplWrit Loading settings file "/home/carlos/VirtualBox VMs/Tensorflow-ASL/Tensorflow-ASL.vbox" with version "1.16-linux"
+01:17:37.855738 USBPROXY USBProxyBackendLinux: Device 1058:0830 (sysfs:/sys/devices/pci0000:00/0000:00:14.0/usb2/2-1//device:/dev/vboxusb/002/005) isn't accessible. giving udev a few seconds to fix this...
+02:37:04.723957 nspr-3   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={edba9d10-45d8-b440-1712-46ac0c9bc4c5} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+02:37:04.841985 nspr-3   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={b2547866-a0a1-4391-8b86-6952d82efaa0} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=0
+02:37:04.921112 nspr-6   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp1s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+04:14:26.646599 dns-monitor HostDnsMonitor: old information
+04:14:26.646632 dns-monitor   server 1: 192.168.18.2
+04:14:26.646641 dns-monitor   no domain set
+04:14:26.646645 dns-monitor   no search string entries
+04:14:26.646650 dns-monitor HostDnsMonitor: new information
+04:14:26.646655 dns-monitor   no server entries
+04:14:26.646659 dns-monitor   no domain set
+04:14:26.646663 dns-monitor   no search string entries
+04:14:26.646668 dns-monitor HostDnsMonitorProxy::notify
+04:14:33.214092 dns-monitor NAT: resolv.conf: nameserver 192.168.18.2
+04:14:33.214201 dns-monitor HostDnsMonitor: old information
+04:14:33.214208 dns-monitor   no server entries
+04:14:33.214212 dns-monitor   no domain set
+04:14:33.214216 dns-monitor   no search string entries
+04:14:33.214219 dns-monitor HostDnsMonitor: new information
+04:14:33.214222 dns-monitor   server 1: 192.168.18.2
+04:14:33.214226 dns-monitor   no domain set
+04:14:33.214229 dns-monitor   no search string entries
+04:14:33.214233 dns-monitor HostDnsMonitorProxy::notify
+04:15:03.060278 dns-monitor HostDnsMonitor: old information
+04:15:03.060293 dns-monitor   server 1: 192.168.18.2
+04:15:03.060298 dns-monitor   no domain set
+04:15:03.060301 dns-monitor   no search string entries
+04:15:03.060304 dns-monitor HostDnsMonitor: new information
+04:15:03.060306 dns-monitor   no server entries
+04:15:03.060309 dns-monitor   no domain set
+04:15:03.060311 dns-monitor   no search string entries
+04:15:03.060315 dns-monitor HostDnsMonitorProxy::notify
+06:25:54.114553 dns-monitor NAT: resolv.conf: nameserver 192.168.18.2
+06:25:54.114610 dns-monitor HostDnsMonitor: old information
+06:25:54.114629 dns-monitor   no server entries
+06:25:54.114632 dns-monitor   no domain set
+06:25:54.114635 dns-monitor   no search string entries
+06:25:54.114638 dns-monitor HostDnsMonitor: new information
+06:25:54.114640 dns-monitor   server 1: 192.168.18.2
+06:25:54.114644 dns-monitor   no domain set
+06:25:54.114646 dns-monitor   no search string entries
+06:25:54.114649 dns-monitor HostDnsMonitorProxy::notify
+06:26:13.006424 dns-monitor HostDnsMonitor: old information
+06:26:13.006440 dns-monitor   server 1: 192.168.18.2
+06:26:13.006445 dns-monitor   no domain set
+06:26:13.006448 dns-monitor   no search string entries
+06:26:13.006450 dns-monitor HostDnsMonitor: new information
+06:26:13.006460 dns-monitor   no server entries
+06:26:13.006462 dns-monitor   no domain set
+06:26:13.006464 dns-monitor   no search string entries
+06:26:13.006467 dns-monitor HostDnsMonitorProxy::notify
+06:26:18.587416 dns-monitor NAT: resolv.conf: nameserver 192.168.18.2
+06:26:18.587495 dns-monitor HostDnsMonitor: old information
+06:26:18.587499 dns-monitor   no server entries
+06:26:18.587501 dns-monitor   no domain set
+06:26:18.587503 dns-monitor   no search string entries
+06:26:18.587505 dns-monitor HostDnsMonitor: new information
+06:26:18.587507 dns-monitor   server 1: 192.168.18.2
+06:26:18.587509 dns-monitor   no domain set
+06:26:18.587511 dns-monitor   no search string entries
+06:26:18.587513 dns-monitor HostDnsMonitorProxy::notify

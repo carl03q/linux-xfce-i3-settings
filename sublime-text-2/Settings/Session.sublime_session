@@ -1,12 +1,14 @@
 {
 	"folder_history":
 	[
-		"/home/carlos/.config/i3"
+		"/home/carlos/.config/i3",
+		"/home/carlos/.config",
+		"/home/carlos/Documents/Evaluacion-de-Desempe-o/evaluacion"
 	],
-	"last_window_id": 2,
+	"last_window_id": 6,
 	"settings":
 	{
-		"new_window_height": 482.0,
+		"new_window_height": 749.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -18,159 +20,15 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 0.0,
+				"height": 96.0,
 				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"console":
-			{
-				"height": 0.0
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"file_history":
-			[
-			],
-			"find":
-			{
-				"height": 0.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": true
-			},
-			"incremental_find":
-			{
-				"height": 0.0
-			},
-			"input":
-			{
-				"height": 0.0
-			},
-			"layout":
-			{
-				"cells":
 				[
 					[
-						0,
-						0,
-						1,
-						1
+						"instal",
+						"Package Control: Install Package"
 					]
 				],
-				"cols":
-				[
-					0.0,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"replace":
-			{
-				"height": 0.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"show_minimap": true,
-			"show_open_files": false,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 150.0,
-			"status_bar_visible": true
-		},
-		"new_window_width": 642.0
-	},
-	"windows":
-	[
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-				]
-			},
-			"buffers":
-			[
-				{
-					"file": "/home/carlos/.config/i3/config",
-					"settings":
-					{
-						"buffer_size": 7388,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"contents": "# vim:filetype=i3\n# i3 config file (v4)\nset $mod Mod4\nset $editor termite\n\nset_from_resource $darkred     color1  #000000\nset_from_resource $red         color9  #000000\nset_from_resource $darkgreen   color2  #000000\nset_from_resource $green       color10 #000000\nset_from_resource $darkyellow  color3  #000000\nset_from_resource $yellow      color11 #000000\nset_from_resource $darkblue    color4  #000000\nset_from_resource $blue        color12 #000000\nset_from_resource $darkmagenta color5  #000000\nset_from_resource $magenta     color13 #000000\nset_from_resource $darkcyan    color6  #000000\nset_from_resource $cyan        color14 #000000\nset_from_resource $darkwhite   color7  #000000\nset_from_resource $white       color15 #000000\n# Use custom colors for black\nset $black       #282828\nset $darkblack   #1d2021\nset $transparent #00000000\n\nset $height 34\n\nset $ws1  \"1:  \"\nset $ws2  \"2:  \"\nset $ws3  \"3:  \"\nset $ws4  \"4:  \"\nset $ws5  \"5:  \"\nset $ws6  \"6:  \"\nset $ws7  \"7:  \"\nset $ws8  \"8:  \"\nset $ws9  \"9:  \"\nset $ws10 \"10:  \"\n\nset $default_gaps_inner 0\nset $default_gaps_outer 0\ngaps inner $default_gaps_inner\ngaps outer $default_gaps_outer\n\nworkspace $ws1 gaps inner 0\nworkspace $ws1 gaps outer 0\nworkspace $ws9 gaps inner 0\nworkspace $ws9 gaps outer 0\nworkspace $ws10 gaps inner 0\nworkspace $ws10 gaps outer 0\n\nworkspace_auto_back_and_forth yes\nforce_display_urgency_hint 0 ms\nfocus_on_window_activation urgent\n\nfloating_minimum_size -1 x -1\nfloating_maximum_size -1 x -1\n\nfont pango:Hack, FontAwesome 12\n\n#                       BORDER      BACKGROUND  TEXT        INDICATOR   CHILD_BORDER\nclient.focused          $black      $black      $darkwhite  $darkblack  $darkblack\nclient.unfocused        $black      $black      $white      $darkblack  $darkblack\nclient.focused_inactive $black      $black      $white      $darkblack  $darkblack\nclient.urgent           $darkred    $darkred    $black      $darkred    $darkred\nclient.background       $black\n\nfloating_modifier $mod\nbindsym $mod+Return exec --no-startup-id exec $HOME/scripts/fullscreen_wrap.sh $editor\nbindsym $mod+Shift+Return exec --no-startup-id exec $HOME/scripts/fullscreen_wrap.sh $editor --name __scratchpad\n\nbindsym $mod+q kill\n\nbindsym $mod+d exec --no-startup-id rofi -show run\n\nbindsym $mod+Left focus left\nbindsym $mod+Right focus right\nbindsym $mod+Up focus up\nbindsym $mod+Down focus down\n\nbindsym $mod+Shift+Left move left 35px\nbindsym $mod+Shift+Down move down 35px\nbindsym $mod+Shift+Up move up 35px\nbindsym $mod+Shift+Right move right 35px\n\nbindsym $mod+h split h\nbindsym $mod+v split v\n\n# Until I figure out a better way to use this key\nbindsym Hyper_L fullscreen\nbindsym $mod+f fullscreen\nbindsym $mod+g fullscreen global\n\nbindsym $mod+s layout stacking\nbindsym $mod+w layout tabbed\nbindsym $mod+e layout toggle split\n\nbindsym $mod+Shift+space floating toggle\nbindsym $mod+space focus mode_toggle\n\nbindsym $mod+a focus parent\nbindsym $mod+Shift+a focus child\n\nbindsym $mod+1 workspace $ws1\nbindsym $mod+2 workspace $ws2\nbindsym $mod+3 workspace $ws3\nbindsym $mod+4 workspace $ws4\nbindsym $mod+5 workspace $ws5\nbindsym $mod+6 workspace $ws6\nbindsym $mod+7 workspace $ws7\nbindsym $mod+8 workspace $ws8\nbindsym $mod+9 workspace $ws9\nbindsym $mod+0 workspace $ws10\nbindsym $mod+Tab workspace back_and_forth\n\nbindsym $mod+Shift+minus move scratchpad\nbindsym $mod+Shift+plus scratchpad show\n\nbindsym $mod+Shift+s sticky toggle\n# put YouTube into fullscreen and execute this for media mode\nbindsym $mod+y fullscreen disable; floating enable; resize set 600 400; sticky enable; move window to position 1940 54\n\nbindsym $mod+Shift+1 move container to workspace number $ws1\nbindsym $mod+Shift+2 move container to workspace number $ws2\nbindsym $mod+Shift+3 move container to workspace number $ws3\nbindsym $mod+Shift+4 move container to workspace number $ws4\nbindsym $mod+Shift+5 move container to workspace number $ws5\nbindsym $mod+Shift+6 move container to workspace number $ws6\nbindsym $mod+Shift+7 move container to workspace number $ws7\nbindsym $mod+Shift+8 move container to workspace number $ws8\nbindsym $mod+Shift+9 move container to workspace number $ws9\nbindsym $mod+Shift+0 move container to workspace number $ws10\n\nbindsym XF86AudioLowerVolume exec --no-startup-id $HOME/scripts/volume_control.py down 5\nbindsym XF86AudioRaiseVolume exec --no-startup-id $HOME/scripts/volume_control.py up 5\nbindsym XF86AudioMute exec --no-startup-id $HOME/scripts/volume_control.py toggle\nbindsym $mod+Shift+v exec --no-startup-id \"killall pavucontrol; $HOME/scripts/fullscreen_wrap.sh pavucontrol -t 3\"\n\nbindsym XF86MonBrightnessDown exec --no-startup-id ${HOME}/scripts/backlight.sh -dec 10\nbindsym XF86MonBrightnessUp exec --no-startup-id ${HOME}/scripts/backlight.sh -inc 10\n\nbindsym $mod+Shift+w exec --no-startup-id $editor --name \"__nmtui\" -e \"nmtui-connect\"\n\nbindsym $mod+Shift+c reload\nbindsym $mod+Shift+r restart\n\n# screenshot\nbindsym --release Print exec --no-startup-id \"maim -p 0 -c 0.96,0.5,0.09 $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png\"\nbindsym --release Shift+Print exec --no-startup-id \"maim -s -p 0 -c 0.96,0.5,0.09 $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png\"\n\nbindsym $mod+n exec --no-startup-id thunar\n\nset $mode_resize resize\nbindsym $mod+r mode \"$mode_resize\"\nmode \"$mode_resize\" {\n    bindsym Left resize shrink width 10 px or 1 ppt\n    bindsym Down resize grow height 10 px or 1 ppt\n    bindsym Up resize shrink height 10 px or 1 ppt\n    bindsym Right resize grow width 10 px or 1 ppt\n\n    bindsym Shift+Left resize shrink width 20 px or 5 ppt\n    bindsym Shift+Down resize grow height 20 px or 5 ppt\n    bindsym Shift+Up resize shrink height 20 px or 5 ppt\n    bindsym Shift+Right resize grow width 20 px or 5 ppt\n\n    bindsym s mode \"default\", exec --no-startup-id $HOME/scripts/slopsize.sh\n\n    bindsym 1 mode \"default\", resize set 1000 600\n    bindsym 2 mode \"default\", resize set 1500 600\n    bindsym 3 mode \"default\", resize set 1200 1000\n\n    bindsym Return mode \"default\"\n    bindsym Escape mode \"default\"\n}\n\nset $mode_power power\nbindsym Mod1+Control+l mode \"$mode_power\"\nmode \"$mode_power\" {\n    bindsym l mode \"default\", exec --no-startup-id $HOME/.i3/i3exit lock\n    bindsym e mode \"default\", exec --no-startup-id $HOME/.i3/i3exit logout\n    bindsym s mode \"default\", exec --no-startup-id $HOME/.i3/i3exit suspend\n    bindsym h mode \"default\", exec --no-startup-id $HOME/.i3/i3exit hibernate\n    bindsym r mode \"default\", exec --no-startup-id $HOME/.i3/i3exit reboot\n    bindsym p mode \"default\", exec --no-startup-id $HOME/.i3/i3exit shutdown\n\n    bindsym Return mode \"default\"\n    bindsym Escape mode \"default\"\n}\n\nset $mode_gaps gaps\nset $mode_gaps_outer outer gaps\nset $mode_gaps_inner inner gaps\nbindsym $mod+Shift+g mode \"$mode_gaps\"\nmode \"$mode_gaps\" {\n    bindsym o      mode \"$mode_gaps_outer\"\n    bindsym i      mode \"$mode_gaps_inner\"\n\n    bindsym 0      mode \"default\", exec --no-startup-id i3-msg \"gaps inner current set 0\" && i3-msg \"gaps outer current set 0\"\n    bindsym d      mode \"default\", exec --no-startup-id i3-msg \"gaps inner current set $default_gaps_inner\" && i3-msg \"gaps outer current set $default_gaps_outer\"\n\n    bindsym Return mode \"default\"\n    bindsym Escape mode \"default\"\n}\n\nmode \"$mode_gaps_inner\" {\n    bindsym plus  gaps inner current plus 5\n    bindsym minus gaps inner current minus 5\n    bindsym 0     mode \"default\", gaps inner current set 0\n    bindsym d     mode \"default\", gaps inner current set $default_gaps_inner\n\n    bindsym Shift+plus  gaps inner all plus 5\n    bindsym Shift+minus gaps inner all minus 5\n    bindsym Shift+0     mode \"default\", gaps inner all set 0\n    bindsym Shift+d     mode \"default\", gaps inner all set $default_gaps_inner\n\n    bindsym Return mode \"default\"\n    bindsym Escape mode \"default\"\n}\n\nmode \"$mode_gaps_outer\" {\n    bindsym plus  gaps outer current plus 5\n    bindsym minus gaps outer current minus 5\n    bindsym 0     mode \"default\", gaps outer current set 0\n    bindsym d     mode \"default\", gaps outer current set $default_gaps_outer\n\n    bindsym Shift+plus  gaps outer all plus 5\n    bindsym Shift+minus gaps outer all minus 5\n    bindsym Shift+0     mode \"default\", gaps outer all set 0\n    bindsym Shift+d     mode \"default\", gaps outer all set $default_gaps_outer\n\n    bindsym Return mode \"default\"\n    bindsym Escape mode \"default\"\n}\n\nset $mode_brightness brightness\nbindsym $mod+Shift+b mode \"$mode_brightness\"\nmode \"$mode_brightness\" {\n    bindsym plus  exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -inc 10\n    bindsym minus exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -dec 10\n    bindsym Shift+plus  exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -inc 1\n    bindsym Shift+minus exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -dec 1\n\n    bindsym 0     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 100\n    bindsym 1     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 10\n    bindsym 2     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 20\n    bindsym 3     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 30\n    bindsym 4     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 40\n    bindsym 5     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 50\n    bindsym 6     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 60\n    bindsym 7     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 70\n    bindsym 8     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 80\n    bindsym 9     mode \"default\", exec --no-startup-id ${HOME}/scripts/backlight.sh -time 50 -set 90\n\n    bindsym Return mode \"default\"\n    bindsym Escape mode \"default\"\n}\n\n# fix graphics glitch\nnew_window none\n#for_window [class=(?i)termite] border pixel 3\n\nfor_window [window_role=\"pop-up\"] floating enable\nfor_window [window_role=\"bubble\"] floating enable\nfor_window [window_role=\"task_dialog\"] floating enable\nfor_window [window_role=\"Preferences\"] floating enable\n\nfor_window [window_type=\"dialog\"] floating enable\nfor_window [window_type=\"menu\"] floating enable\n\nfor_window [class=\"(?i)gsimplecal\"] floating enable, move position mouse, move down $height px\nfor_window [class=\"(?i)qemu-system\"] floating enable\nfor_window [class=\"(?i)VirtualBox\" title=\"(?i)Manager\"] floating enable\nfor_window [class=\"(?i)VirtualBox\"] floating enable\nfor_window [class=\"(?i)blueman\"] floating enable\n\n#for_window [instance=\"sun-awt-X11-XFramePeer\"] floating enable\nfor_window [instance=\"__scratchpad\"] floating enable\nfor_window [instance=\"__nmtui\"] floating enable\nfor_window [class=\"(?i)recordmydesktop\"] floating enable\n\nfor_window [class=\"(?i)pavucontrol\"] floating enable, move position mouse\nfor_window [class=\"(?i)pavucontrol\" instance=\"pavucontrol-bar\"] move down $height px\n\n#assign [class=\"(?i)chrome\"]                       $ws1\nassign [class=\"(?i)eclipse\" window_type=\"splash\"] $ws3\nassign [class=\"(?i)eclipse\" window_type=\"normal\"] $ws3\nassign [class=\"(?i)thunderbird\"]                  $ws9\n\nbar {\n#    verbose yes\n    status_command i3blocks\n    i3bar_command i3bar -t\n    position top\n    font pango:Hack, FontAwesome 11\n    strip_workspace_numbers yes\n    separator_symbol \"■\"\n    bindsym button4 nop\n    bindsym button5 nop\n    tray_output eDP1\n    tray_output LVDS-0\n    tray_padding 0\n    height $height\n    colors {\n        statusline         $white\n        background         $transparent\n        separator          $transparent\n\n#                          BORDER       BACKGROUND   TEXT\n        focused_workspace  $transparent $transparent $darkwhite\n        inactive_workspace $transparent $transparent $white\n        active_workspace   $transparent $transparent $white\n        urgent_workspace   $darkred     $darkred     $transparent\n        binding_mode       $darkred     $darkred     $transparent\n    }\n}\n\n# AUTOSTART\nexec_always --no-startup-id feh --bg-fill $HOME/.config/wallpapers/simple.png\nexec --no-startup-id compton -b\n\nexec --no-startup-id nm-applet &\nexec --no-startup-id blueman-applet &\nexec --no-startup-id redshift-gtk &\n\nexec --no-startup-id dunst &\nexec --no-startup-id xedgewarp -b\n\nexec_always --no-startup-id \"pgrep --exact xev || xev -root -event randr | grep --line-buffered ScreenChangeNotify | while read change; do pkill -RTMIN+4 i3blocks; done\"",
-					"file": "/home/carlos/.config/i3/config-manjaro",
-					"file_size": 12543,
-					"file_write_time": 1496748395000000,
-					"settings":
-					{
-						"buffer_size": 12521,
-						"line_ending": "Unix",
-						"name": "# vim:filetype=i3"
-					}
-				}
-			],
-			"build_system": "",
-			"command_palette":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
+				"width": 449.0
 			},
 			"console":
 			{
@@ -187,6 +45,18 @@
 			},
 			"file_history":
 			[
+				"/run/media/carlos/JULIOORTEGA/ortega_julio,Ibañez_Alex/Problema 5/fcoenergy2.py",
+				"/home/carlos/Dropbox/UTP/final-semestre/Tópicos Especiales II PM/Tarea/Tarea 2/script/5_pandas_plt-FCO_citizen/main.py",
+				"/home/carlos/.config/i3/scripts/volume",
+				"/home/carlos/.config/i3/config-manjaro",
+				"/home/carlos/.config/i3/scripts/spotify.py",
+				"/home/carlos/.config/i3/scripts/strcut.py",
+				"/home/carlos/.config/i3/scripts/network",
+				"/home/carlos/.config/i3/scripts/cpu_usage",
+				"/home/carlos/.config/i3/scripts/memory",
+				"/home/carlos/Downloads/lab.pkt",
+				"/home/carlos/.config/i3/scripts/get_title",
+				"/home/carlos/.fonts/fontawesome-webfont.eot"
 			],
 			"find":
 			{
@@ -204,6 +74,55 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"virtualbox",
+					"mod+shift+spa",
+					"toggle",
+					"virtualbox",
+					"border toggle",
+					"border ",
+					"border",
+					"virtua",
+					"pamac",
+					"virtualbox",
+					"figure",
+					"pamac",
+					"Pamac-man",
+					"set ",
+					"$",
+					".config",
+					"sink",
+					"Desktop",
+					"spotif",
+					"Desktop",
+					"play",
+					"spotif",
+					"Mod",
+					"mod",
+					"+spac",
+					"mod",
+					"mod2",
+					"mod",
+					"space",
+					"ctrl+",
+					"logout",
+					"load_average",
+					"decimals",
+					"alwa",
+					"lock",
+					"i3lock",
+					"comp",
+					"backgr",
+					"png",
+					"\"",
+					"exec",
+					"mod+d",
+					"mod=d",
+					"bindsym",
+					"works",
+					"wordk",
+					"border",
+					"bar",
+					"play",
 					"gnome",
 					"gtk",
 					"theme",
@@ -227,85 +146,13 @@
 				"whole_word": false,
 				"wrap": true
 			},
-			"folders":
-			[
-				{
-					"path": "/home/carlos/.config/i3"
-				}
-			],
-			"groups":
-			[
-				{
-					"selected": 0,
-					"sheets":
-					[
-						{
-							"buffer": 0,
-							"file": "/home/carlos/.config/i3/config",
-							"settings":
-							{
-								"buffer_size": 7388,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										6699,
-										6699
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_size": 8,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 3075.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/carlos/.config/i3/config-manjaro",
-							"settings":
-							{
-								"buffer_size": 12521,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										9905,
-										9905
-									]
-								],
-								"settings":
-								{
-									"auto_name": "# vim:filetype=i3",
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 4138.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						}
-					]
-				}
-			],
 			"incremental_find":
 			{
 				"height": 0.0
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 33.0
 			},
 			"layout":
 			{
@@ -330,7 +177,6 @@
 				]
 			},
 			"menu_visible": true,
-			"position": "0,1,0,0,0,0,0,0,0,1366,768",
 			"replace":
 			{
 				"height": 0.0
@@ -356,16 +202,229 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 150.0,
+			"side_bar_width": 151.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 1366.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 96.0,
+				"selected_items":
+				[
+					[
+						"instal",
+						"Package Control: Install Package"
+					]
+				],
+				"width": 449.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/run/media/carlos/JULIOORTEGA/ortega_julio,Ibañez_Alex/Problema 5/fcoenergy2.py",
+				"/home/carlos/Dropbox/UTP/final-semestre/Tópicos Especiales II PM/Tarea/Tarea 2/script/5_pandas_plt-FCO_citizen/main.py",
+				"/home/carlos/.config/i3/scripts/volume",
+				"/home/carlos/.config/i3/config-manjaro",
+				"/home/carlos/.config/i3/scripts/spotify.py",
+				"/home/carlos/.config/i3/scripts/strcut.py",
+				"/home/carlos/.config/i3/scripts/network",
+				"/home/carlos/.config/i3/scripts/cpu_usage",
+				"/home/carlos/.config/i3/scripts/memory",
+				"/home/carlos/Downloads/lab.pkt",
+				"/home/carlos/.config/i3/scripts/get_title",
+				"/home/carlos/.fonts/fontawesome-webfont.eot"
+			],
+			"find":
+			{
+				"height": 35.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"virtualbox",
+					"mod+shift+spa",
+					"toggle",
+					"virtualbox",
+					"border toggle",
+					"border ",
+					"border",
+					"virtua",
+					"pamac",
+					"virtualbox",
+					"figure",
+					"pamac",
+					"Pamac-man",
+					"set ",
+					"$",
+					".config",
+					"sink",
+					"Desktop",
+					"spotif",
+					"Desktop",
+					"play",
+					"spotif",
+					"Mod",
+					"mod",
+					"+spac",
+					"mod",
+					"mod2",
+					"mod",
+					"space",
+					"ctrl+",
+					"logout",
+					"load_average",
+					"decimals",
+					"alwa",
+					"lock",
+					"i3lock",
+					"comp",
+					"backgr",
+					"png",
+					"\"",
+					"exec",
+					"mod+d",
+					"mod=d",
+					"bindsym",
+					"works",
+					"wordk",
+					"border",
+					"bar",
+					"play",
+					"gnome",
+					"gtk",
+					"theme",
+					"config",
+					"spotify",
+					"$w0",
+					"loating",
+					"float",
+					"exec"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 33.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,0,0,0,0,0,18,683,768,1366,768",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 151.0,
 			"status_bar_visible": true,
-			"window_id": 2,
-			"workspace_name": ""
+			"window_id": 6,
+			"workspace_name": "/home/carlos/.config/sublime-text-2/Projects/i3conifg.sublime-project"
 		}
 	],
 	"workspaces":
 	{
 		"recent_workspaces":
 		[
+			"/home/carlos/.config/sublime-text-2/Projects/i3conifg.sublime-project",
+			"/home/carlos/.config/sublime-text-2/Projects/website-evaluacion.sublime-project"
 		]
 	}
 }

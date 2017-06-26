@@ -1,8 +1,8 @@
 delay=1
-region=2
+region=3
 action=1
 show_mouse=1
-screenshot_dir=file:/tmp
+screenshot_dir=file:/home/carlos/Downloads/00-taller/notebook-illustration
 app=gimp-2.8
 last_user=
 

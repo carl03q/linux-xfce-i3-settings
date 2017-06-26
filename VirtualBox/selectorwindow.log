@@ -1,17 +1,2 @@
-VirtualBox GUI VM Selector Window 5.1.22 r115126 linux.amd64 (May  9 2017 19:27:33) release log
-00:00:00.293685 Log opened 2017-06-06T12:00:29.628362000Z
-00:00:00.293687 Build Type: release
-00:00:00.293688 OS Product: Linux
-00:00:00.293689 OS Release: 4.9.30-1-MANJARO
-00:00:00.293690 OS Version: #1 SMP PREEMPT Thu May 25 20:31:43 UTC 2017
-00:00:00.293707 DMI Product Name: Inspiron 5559
-00:00:00.293712 DMI Product Version: 
-00:00:00.293745 Host RAM: 7692MB (7.5GB) total, 6155MB (6.0GB) available
-00:00:00.293748 Executable: /usr/lib/virtualbox/VirtualBox
-00:00:00.293749 Process ID: 30506
-00:00:00.293750 Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.293768 Qt version: 5.8.0
-00:00:00.299701 GUI: UIMediumEnumerator: Medium-enumeration started...
-00:00:00.368126 GUI: UIMediumEnumerator: Medium-enumeration finished!
-00:00:04.811285 GUI: UIInvisibleWindow::sltFallback: Move event haven't came. Screen: 0, work area: 682x383 x 75x50
-00:00:04.811355 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 682x383 x 75x50
+03:48:15.933753 Log continuation - Log started 2017-06-23T15:56:51.099383000Z
+03:48:15.933800 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 682x383 x 75x50

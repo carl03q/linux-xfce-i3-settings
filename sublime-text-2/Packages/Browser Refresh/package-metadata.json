@@ -1,0 +1,1 @@
+{"description": "Save the file you are working on and refresh your browser with one keystroke", "url": "http://gcollazo.github.com/BrowserRefresh-Sublime", "platforms": ["windows", "osx", "linux"], "version": "2.0.4", "sublime_text": "*", "dependencies": []}

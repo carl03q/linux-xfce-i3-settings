@@ -43,6 +43,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="thunar"/>
+        <value type="string" value="vlc"/>
         <value type="string" value="pnmixer"/>
         <value type="string" value="docky"/>
         <value type="string" value="google-chrome"/>
@@ -58,6 +59,8 @@
         <value type="string" value="pa-applet"/>
         <value type="string" value="xnoise"/>
         <value type="string" value="notes"/>
+      </property>
+      <property name="names-hidden" type="array">
       </property>
     </property>
     <property name="plugin-7" type="string" value="separator">

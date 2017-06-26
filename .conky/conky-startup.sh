@@ -1,4 +1,3 @@
-sleep 10s
-killall conky
-cd "/home/carlos/.conky/Gotham"
-conky -c "/home/carlos/.conky/Gotham/Gotham" &
+# No widgets enabled!
+
+exit 0
